@@ -9,27 +9,31 @@ function App() {
   return (
     <>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <h3>Budujemy dla was nową stronę. Za utrudnienia przepraszamy. </h3>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      <h1>Tapicer Jędrzejów Zaprasza!</h1>
+      <h2>ul. Strażacka 39, 28-300 Jędrzejów</h2>
+      <h2>tel. 504 311 731</h2>
+      <a href="https://vitejs.dev" target="_blank">
+        <img src={viteLogo} className="logo" alt="Vite logo" />
+      </a>
+      <a href="https://react.dev" target="_blank">
+        <img src={reactLogo} className="logo react" alt="React logo" />
+      </a>
+      <div>
+        <h2>czym się zajmujemy:</h2>
+        <ul>
+          <li>obszywanie foteli samochodowych</li>
+          <li>regeneracja foteli po wystrzale AIRBAG</li>
+          <li>podsufitki odklejone i po wystrzale</li>
+          <li>obszywanie kierownic</li>
+          <li>inne - Po więcej zadzwoń i zapytaj</li>
+        </ul>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+
+      <h3>Budujemy dla was nową stronę. Za utrudnienia przepraszamy. </h3>
     </>
-  )
+  );
 }
 
 export default App
