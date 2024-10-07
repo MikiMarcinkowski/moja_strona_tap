@@ -15,17 +15,21 @@ import { faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
 import "./App.css";
 
 function App() {
+const phoneNumber = "504311731";
+
   return (
     <>
       <header className="header">
-        <h2>Tapicer Jędrzejów</h2>
-        <div className="phone-info"><FontAwesomeIcon icon={faPhoneAlt} size="lg" />
-          <span>tel. 504 311 731</span>
+        <h4>Tapicer Jędrzejów</h4>
+        <div>
+          <a className="phone-info" href={`tel:${phoneNumber}`}>
+            <FontAwesomeIcon icon={faPhoneAlt} size="lg" />
+            <span>tel. {phoneNumber}</span>
+          </a>
         </div>
       </header>
 
       <div>
-       
         <h3>Budujemy dla was nową stronę. Za utrudnienia przepraszamy. </h3>
         <img src={maszynaImage} className="maszyna" alt="maszyna do szycia" />
       </div>

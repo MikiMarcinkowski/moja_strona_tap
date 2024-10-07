@@ -76,16 +76,18 @@ footer {
   background-color: rgb(255, 115, 0); /* Kolor tła nagłówka */
   padding: 10px 0; /* Odstępy wewnętrzne */
   display: flex;
-  justify-content: center; /* Wyrównanie do środka */
+  justify-content: space-between; /* Wyrównanie do środka */
   align-items: center; /* Wyrównanie pionowe */
   color: white; /* Kolor tekstu */
   font-size: 1.2rem; /* Rozmiar czcionki */
+  padding: 0 10px;
 }
 
 .phone-info {
   display: flex;
-  align-items: center; /* Wyrównanie ikony i tekstu */
-  margin-left: 50px;
+   
+  margin-left: auto;
+  color: white;
 }
 
 .phone-info span {
