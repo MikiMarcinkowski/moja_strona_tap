@@ -1,6 +1,12 @@
 // import { useState } from 'react'
 import kierownicaImage from "./assets/photo/kierownica.webp";
 import maszynaImage from "./assets/photo/masyna.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faInstagram,
+  faWhatsapp,
+} from "@fortawesome/free-brands-svg-icons";
 
 
 import "./App.css";
@@ -13,7 +19,7 @@ function App() {
         <img src={maszynaImage} className="maszyna" alt="maszyna do szycia" />
       </div>
       <h1>
-        <span className='companyName'>Tapicer Jędrzejów</span> Zaprasza!
+        <span className="companyName">Tapicer Jędrzejów</span> Zaprasza!
       </h1>
       <h2>ul. Strażacka 39, 28-300 Jędrzejów</h2>
       <h2>tel. 504 311 731</h2>
@@ -31,6 +37,32 @@ function App() {
       </div>
 
       <h3>Budujemy dla was nową stronę. Za utrudnienia przepraszamy. </h3>
+      <footer>
+        <h3>Znajdź nas na:</h3>
+        <div className="social-links">
+          <a
+            href="https://www.facebook.com/tapicerjedrzejow"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faFacebook} size="2x" />
+          </a>
+          <a
+            href="https://www.instagram.com/tapicerjedrzejow/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faInstagram} size="2x" />
+          </a>
+          <a
+            href="https://wa.me/504311731"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faWhatsapp} size="2x" />
+          </a>
+        </div>
+      </footer>
     </>
   );
 }

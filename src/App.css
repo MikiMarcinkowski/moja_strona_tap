@@ -54,3 +54,18 @@ color: rgb(255, 115, 0);
 font-size: 1.5em; 
 
 }
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.social-links a {
+  margin: 0 15px;
+  color: #FF8C00; /* Dopasuj do swojego schematu kolorów */
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: #FFA500;
+}
