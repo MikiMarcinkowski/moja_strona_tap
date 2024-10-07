@@ -62,10 +62,34 @@ footer {
 
 .social-links a {
   margin: 0 15px;
-  color: #FF8C00; /* Dopasuj do swojego schematu kolorów */
+  color: rgb(255, 115, 0); /* Dopasuj do swojego schematu kolorów */
   text-decoration: none;
 }
 
 .social-links a:hover {
-  color: #FFA500;
+  color: rgb(255, 115, 0);
 }
+
+
+/* Stylizacja nagłówka */
+.header {
+  background-color: rgb(255, 115, 0); /* Kolor tła nagłówka */
+  padding: 10px 0; /* Odstępy wewnętrzne */
+  display: flex;
+  justify-content: center; /* Wyrównanie do środka */
+  align-items: center; /* Wyrównanie pionowe */
+  color: white; /* Kolor tekstu */
+  font-size: 1.2rem; /* Rozmiar czcionki */
+}
+
+.phone-info {
+  display: flex;
+  align-items: center; /* Wyrównanie ikony i tekstu */
+  margin-left: 50px;
+}
+
+.phone-info span {
+  margin-left: 10px; /* Odstęp między ikoną a numerem telefonu */
+}
+
+
