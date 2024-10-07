@@ -1,25 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// import { useState } from 'react'
+import kierownicaImage from "./assets/photo/kierownica.webp";
+import maszynaImage from "./assets/photo/masyna.jpg";
+
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <div>
         <h3>Budujemy dla was nową stronę. Za utrudnienia przepraszamy. </h3>
+        <img src={maszynaImage} className="maszyna" alt="maszyna do szycia" />
       </div>
       <h1>Tapicer Jędrzejów Zaprasza!</h1>
       <h2>ul. Strażacka 39, 28-300 Jędrzejów</h2>
       <h2>tel. 504 311 731</h2>
-      <a href="https://vitejs.dev" target="_blank">
-        <img src={viteLogo} className="logo" alt="Vite logo" />
-      </a>
-      <a href="https://react.dev" target="_blank">
-        <img src={reactLogo} className="logo react" alt="React logo" />
-      </a>
+      <img src={kierownicaImage} className="kierownica" alt="Kierownica" />
+
       <div>
         <h2>czym się zajmujemy:</h2>
         <ul>
@@ -36,4 +34,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
