@@ -2,8 +2,7 @@
 import kierownicaImage from "./assets/photo/kierownica.webp";
 import maszynaImage from "./assets/photo/masyna.jpg";
 
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+
 import "./App.css";
 
 function App() {
