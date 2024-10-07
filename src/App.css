@@ -46,5 +46,11 @@
 }
 
 .kierownica {
-  max-width: 400px;
+  max-width: 350px;
+}
+
+.companyName {
+color: rgb(255, 115, 0);
+font-size: 1.5em; 
+
 }

@@ -12,7 +12,9 @@ function App() {
         <h3>Budujemy dla was nową stronę. Za utrudnienia przepraszamy. </h3>
         <img src={maszynaImage} className="maszyna" alt="maszyna do szycia" />
       </div>
-      <h1>Tapicer Jędrzejów Zaprasza!</h1>
+      <h1>
+        <span className='companyName'>Tapicer Jędrzejów</span> Zaprasza!
+      </h1>
       <h2>ul. Strażacka 39, 28-300 Jędrzejów</h2>
       <h2>tel. 504 311 731</h2>
       <img src={kierownicaImage} className="kierownica" alt="Kierownica" />
