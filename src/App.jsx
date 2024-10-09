@@ -10,12 +10,44 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
 import "./App.css";
+import  { useEffect, useState } from "react";
+import CookiesModal from "./assets/modal/CookiesModal";
+
+// import CookiesPolicy from "./assets/Cookies/Cookies";
+
 
 function App() {
   const phoneNumber = "504311731";
 
+const [showModal, setShowModal] = useState(false);
+
+
+useEffect(() => {
+  const cookieDecision = localStorage.getItem("cookiesAccepted");
+  if (!cookieDecision) {
+    setShowModal(true); 
+  }
+}, []);
+
+const handleAccept = () => {
+  localStorage.setItem("cookiesAccepted", "true"); // Zapisanie decyzji w localStorage
+  setShowModal(false); 
+};
+
+const handleReject = () => {
+  localStorage.setItem("cookiesAccepted", "false"); // 
+  setShowModal(false); 
+};
+
+   
+  
   return (
     <>
+      {showModal && (
+        <CookiesModal onAccept={handleAccept} onReject={handleReject} />
+      )}
+ 
+
       <header className="header">
         <h4>
           Tapicer Jędrzejów <br />
@@ -46,8 +78,8 @@ function App() {
         <img src={kanapa_moto} className="kierownica" alt="kierownica" />
       </div>
 
-      <div >
-        <h2 >Czym się zajmujemy?</h2>
+      <div>
+        <h2>Czym się zajmujemy?</h2>
         <h3>Głównie tapicerstwem samochodowym i motocyklowym:</h3>
         <ul className="items-list">
           <li>Obszywanie kanap motocyklowych</li>

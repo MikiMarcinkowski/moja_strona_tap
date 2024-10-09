@@ -1,0 +1,63 @@
+/* components/CookiesPolicy.module.css */
+.cookie__container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.cookie__container:hover {
+  transform: scale(1.02);
+}
+
+.cookie__title {
+  color: #ff5722;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.cookie__subtitle {
+  color: #333;
+  margin-top: 30px;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #ff5722;
+  padding-bottom: 5px;
+}
+
+.cookie__paragraph {
+  line-height: 1.6;
+  color: #555;
+  font-size: 1.1rem;
+}
+
+.cookie__list {
+  list-style-type: disc;
+  margin-left: 20px;
+  color: #555;
+  font-size: 1.1rem;
+}
+
+.cookie__item {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.cookie__item::marker {
+  color: #ff5722; /* Zmiana koloru znacznika listy */
+}
+
+.cookie__item:hover {
+  color: #ff5722; /* Zmiana koloru tekstu przy najechaniu */
+}
+
+.cookie__footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #777;
+}
