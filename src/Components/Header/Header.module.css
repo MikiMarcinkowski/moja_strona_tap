@@ -1,0 +1,35 @@
+.header {
+  /* background-color: rgb(255, 115, 0); Kolor tła nagłówka */
+  padding: 10px 20px; /* Odstępy wewnętrzne */
+  display: flex;
+  justify-content: space-between; /* Wyrównanie do środka */
+  align-items: center; /* Wyrównanie pionowe */
+  color: rgb(255, 115, 0); /* Kolor tekstu */
+  font-size: 1rem; /* Rozmiar czcionki */
+  border: 1px solid rgb(255, 115, 0);
+}
+
+.phoneInfo {
+  display: flex;
+  color: rgb(255, 115, 0);
+  margin-right: 20px;
+}
+
+.phoneInfo span {
+  margin-left: 10px; /* Odstęp między ikoną a numerem telefonu */
+}
+
+.headerAddress {
+  color: white;
+  margin-left: 10px;
+}
+
+@media (max-width: 320px) {
+  .phoneInfo span {
+    display: none; 
+  }
+
+  .phoneInfo {
+    margin-right: 70px;
+  }
+}

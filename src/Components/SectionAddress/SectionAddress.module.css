@@ -1,0 +1,9 @@
+.build_title {
+  text-align: center; /* Wyśrodkowanie tekstu */
+  margin: 20px 0; /* Marginesy wokół sekcji */
+}
+
+.companyName {
+  color: #ff7300; /* Dopasowanie koloru tekstu */
+  font-weight: bold; /* Podkreślenie nazwy firmy */
+}

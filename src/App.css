@@ -3,25 +3,17 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  
+
 }
 
 
 
-/* .card {
-  padding: 2em;
-} */
 
-/* .read-the-docs {
-  color: #888;
-} */
 
-.maszyna  {
-  width: 100%;
-}
 
-.kierownica {
-  max-width: 350px;
-}
+
+
 
 .companyName {
 color: rgb(255, 115, 0);
@@ -29,76 +21,6 @@ font-size: 1.5em;
 
 }
 
-.footer {
-  margin-top: 50px;
-display: flex;
-text-align: left;
-justify-content: space-around;
-
-}
-
-.social-links a {
-  margin: 0 15px;
-  color: rgb(255, 115, 0); /* Dopasuj do swojego schematu kolorów */
-  text-decoration: none;
-}
-
-.social-links a:hover {
-  color: rgb(255, 115, 0);
- 
-}
 
 
-/* Stylizacja nagłówka */
-.header {
-  /* background-color: rgb(255, 115, 0); Kolor tła nagłówka */
-  padding: 10px 0; /* Odstępy wewnętrzne */
-  display: flex;
-  justify-content: space-between; /* Wyrównanie do środka */
-  align-items: center; /* Wyrównanie pionowe */
-  color: rgb(255, 115, 0); /* Kolor tekstu */
-  font-size: 1rem; /* Rozmiar czcionki */
-  padding: 0 10px;
-  border: 1px solid rgb(255, 115, 0);
-}
 
-.phone-info {
-  display: flex;
-   
-  /* margin-left: auto; */
-  color: rgb(255, 115, 0);
-margin-right: 20px;
-}
-
-.phone-info span {
-  margin-left: 20px; /* Odstęp między ikoną a numerem telefonu */
-}
-
-.footer-logo {
-  color: rgb(255, 115, 0);
-font-size: 1.5em;
-
-}
-
-.header-address {
-  color: white;
-  margin-left: 10px;
-}
-
-@media (max-width: 320px) {
-  .phone-info span {
-    display: none; 
-   /* Ukrycie całego elementu .phone-info */
-  }
-}
-
-@media (max-width: 320px) {
-  .phone-info  {
-   margin-right: 70px;
-   /* Ukrycie całego elementu .phone-info */
-  }
-}
-
-.items-list {
-  text-decoration: none;
-}

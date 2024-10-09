@@ -1,5 +1,5 @@
 // components/CookiesModal.jsx
-import React from "react";
+
 import css from "./CookiesModal.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCookieBite } from "@fortawesome/free-solid-svg-icons";
