@@ -1,35 +1,38 @@
 .header {
-  /* background-color: rgb(255, 115, 0); Kolor tła nagłówka */
-  padding: 10px 20px; /* Odstępy wewnętrzne */
+  padding: 10px 20px;
   display: flex;
-  justify-content: space-between; /* Wyrównanie do środka */
-  align-items: center; /* Wyrównanie pionowe */
-  color: rgb(255, 115, 0); /* Kolor tekstu */
-  font-size: 1rem; /* Rozmiar czcionki */
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(255, 115, 0);
+  font-size: 1rem;
   border: 1px solid rgb(255, 115, 0);
 }
 
 .phoneInfo {
   display: flex;
   color: rgb(255, 115, 0);
-  margin-right: 20px;
+
+  align-items: center;
 }
 
 .phoneInfo span {
-  margin-left: 10px; /* Odstęp między ikoną a numerem telefonu */
+  margin-left: 5px;
+}
+
+@media (max-width: 320px) {
+  .phoneInfo span {
+    display: none;
+  }
+  .phoneInfo {
+    margin-right: 70px;
+  }
+}
+
+.phoneInfo:hover {
+  color: rgb(255, 81, 0);
 }
 
 .headerAddress {
   color: white;
   margin-left: 10px;
-}
-
-@media (max-width: 320px) {
-  .phoneInfo span {
-    display: none; 
-  }
-
-  .phoneInfo {
-    margin-right: 70px;
-  }
 }

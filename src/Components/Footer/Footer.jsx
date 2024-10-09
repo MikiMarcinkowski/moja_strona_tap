@@ -7,7 +7,9 @@ import {
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 import UnderConstruction from "../underConstruction/UnderConstruction";
-import Copyright from "../CopyRight/Copyright";
+import Copyright from "../CopyrRight/CopyRight";
+
+
 
 const Footer = () => {
   return (
@@ -20,7 +22,7 @@ const Footer = () => {
           <p>tel. 504311731</p>
           <p>www.tapicerjedrzejow.pl</p>
         </div>
-        <div>
+        <div className="css.socialLinks__wrapper">
           <h2 className={css.socialLinks__title}>Odszukaj nas:</h2>
           <div className={css.socialLinks}>
             <a
@@ -48,10 +50,9 @@ const Footer = () => {
         </div>
       </div>
       <div>
-        <UnderConstruction/>
-        <Copyright/>
+        <UnderConstruction />
+       <Copyright/>
       </div>
-      
     </footer>
   );
 };

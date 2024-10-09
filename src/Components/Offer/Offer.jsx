@@ -1,4 +1,4 @@
-import React from "react";
+
 import css from "./offer.module.css"; 
 
 const Offer = () => {
@@ -12,8 +12,9 @@ const Offer = () => {
         <li>Regeneracja foteli po wystrzale AIRBAG</li>
         <li>Podsufitki odklejone i po wystrzale</li>
         <li>Obszywanie kierownic</li>
-        <li>Inne - Po więcej zadzwoń i zapytaj</li>
-        <li>
+              <li>Inne - Po więcej zadzwoń i zapytaj</li>
+              <li>Krzesła</li>
+                      <li>
           Elementy mebli{" "}
           <b>(nie przyjmujemy całych kanap, foteli domowych i łóżek)</b>
         </li>

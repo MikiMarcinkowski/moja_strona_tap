@@ -11,6 +11,7 @@ import UnderConstruction from "./Components/underConstruction/UnderConstruction"
 import Address from "./Components/SectionAddress/SectionAddress";
 import SewingMachineImage from "./Components/BackgroundSection/BackgroundSection";
 
+
 function App() {
   const phoneNumber = "504311731";
   const [showModal, setShowModal] = useState(false);
@@ -46,7 +47,7 @@ function App() {
       <Address />
       <Gallery />
       <Offer />
-      <Footer />
+      <Footer/>
     </>
   );
 }
