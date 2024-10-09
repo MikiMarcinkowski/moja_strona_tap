@@ -1,7 +1,7 @@
 
 .modal__container {
   position: fixed;
-  bottom: 0;
+  bottom: 20px;
   left: 0;
   right: 0;
   background-color: #ffffff; /* Kolor tła */
