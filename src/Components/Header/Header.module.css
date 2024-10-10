@@ -5,7 +5,7 @@
   align-items: center;
   color: rgb(255, 115, 0);
   font-size: 1rem;
-  border: 1px solid rgb(255, 115, 0);
+  border-bottom: 2px solid rgb(255, 115, 0);
 }
 
 .phoneInfo {
