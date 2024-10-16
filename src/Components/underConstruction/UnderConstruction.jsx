@@ -1,5 +1,5 @@
 
-import css from "./underConstruction.module.css"; // Import stylów
+import css from "./UnderConstruction.module.css"; // Import stylów
 
 const UnderConstruction = () => {
   return (

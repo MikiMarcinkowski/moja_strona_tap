@@ -1,5 +1,5 @@
 
-import css from "./offer.module.css"; 
+import css from "./Offer.module.css"; 
 
 const Offer = () => {
   return (

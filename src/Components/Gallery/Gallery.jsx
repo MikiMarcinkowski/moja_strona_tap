@@ -2,7 +2,7 @@
 import kierownicaImage from "../../assets/photo/kierownica.webp";
 import fotel_zastawa from "../../assets/photo/fotel_zastawa.webp";
 import kanapa_moto from "../../assets/photo/kanapa_moto.webp";
-import css from "./gallery.module.css"; 
+import css from "./Gallery.module.css"; 
 
 const Gallery = () => {
   return (
