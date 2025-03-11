@@ -40,7 +40,7 @@ function App() {
       )}
 
       <Header phoneNumber={phoneNumber} />
-      <UnderConstruction />
+      {/* <UnderConstruction /> */}
 
       <SewingMachineImage />
 
