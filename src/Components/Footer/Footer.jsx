@@ -5,9 +5,13 @@ import {
   faFacebook,
   faInstagram,
   faWhatsapp,
+
 } from "@fortawesome/free-brands-svg-icons";
-import UnderConstruction from "../underConstruction/UnderConstruction";
+// import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
+
+// import UnderConstruction from "../underConstruction/UnderConstruction";
 import Copyright from "../CopyrRight/CopyRight";
+import GoogleMapsIconLink from "../GogleMapsIconLink/GoogleMapsIconLink";
 
 
 
@@ -46,11 +50,19 @@ const Footer = () => {
             >
               <FontAwesomeIcon icon={faWhatsapp} size="2x" />
             </a>
+            {/* <a
+              href="https://maps.google.com/?q=Tapicer+Jędrzejów"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon icon={faMapMarkerAlt} size="2x" />
+            </a> */}
+            <GoogleMapsIconLink/>
           </div>
         </div>
       </div>
       <div>
-        <Copyright/>
+        <Copyright />
       </div>
     </footer>
   );

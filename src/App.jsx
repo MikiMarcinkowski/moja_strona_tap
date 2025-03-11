@@ -7,9 +7,11 @@ import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
 import Offer from "./Components/Offer/Offer";
 import Gallery from "./Components/Gallery/Gallery";
-import UnderConstruction from "./Components/underConstruction/UnderConstruction";
+// import UnderConstruction from "./Components/underConstruction/UnderConstruction";
 import Address from "./Components/SectionAddress/SectionAddress";
 import SewingMachineImage from "./Components/BackgroundSection/BackgroundSection";
+import GoogleMapsLink from "./Components/GoogleMapsLink/GoogleMapsLink";
+// import GoogleMapEmbed from "./Components/GoogleMap/GoogleMapEmbed";
 
 function App() {
   const phoneNumber = "504311731";
@@ -31,6 +33,10 @@ function App() {
     localStorage.setItem("cookiesAccepted", "false");
     setShowModal(false);
   };
+//link do mapy
+  // const shareLink = "https://maps.app.goo.gl/REBzfDBxMUDxTSZGA";
+
+
 
   return (
     <>
@@ -40,8 +46,13 @@ function App() {
       <Header phoneNumber={phoneNumber} />
       <SewingMachineImage />
       <Address />
+      <GoogleMapsLink
+        address="ul. Strażacka 39, Jędrzejów"
+        label="Otwórz w Mapach Google"
+      />
       <Gallery />
       <Offer />
+      {/* <GoogleMapEmbed shareLink={shareLink} /> */}
       <Footer />
     </>
   );

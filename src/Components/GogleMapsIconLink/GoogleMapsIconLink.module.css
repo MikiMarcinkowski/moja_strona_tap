@@ -1,0 +1,10 @@
+.map__icon {
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  color: rgb(255, 115, 0);
+}
+
+.map__icon:hover {
+  color: rgb(255, 81, 0);
+}
