@@ -49,10 +49,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      {/* <div>
-        <UnderConstruction />
-       <Copyright/>
-      </div> */}
+      <div>
+        <Copyright/>
+      </div>
     </footer>
   );
 };
