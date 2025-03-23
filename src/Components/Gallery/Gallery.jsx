@@ -1,21 +1,12 @@
+import React from "react";
 
-import kierownicaImage from "../../assets/photo/kierownica.webp";
-import fotel_zastawa from "../../assets/photo/fotel_zastawa.webp";
-import kanapa_moto from "../../assets/photo/kanapa_moto.webp";
-import css from "./Gallery.module.css"; 
-
-const Gallery = () => {
+function Gallery() {
   return (
-    <div className={css.gallery}>
-      <img
-        src={kierownicaImage}
-        className={css.gallery__item}
-        alt="kierownica"
-      />
-      <img src={fotel_zastawa} className={css.gallery__item} alt="fotel" />
-      <img src={kanapa_moto} className={css.gallery__item} alt="kanapa" />
+    <div className="gallery">
+      <h1>Galeria</h1>
+      {/* Dodaj zawartość galerii */}
     </div>
   );
-};
+}
 
 export default Gallery;

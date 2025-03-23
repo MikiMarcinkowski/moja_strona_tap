@@ -15,7 +15,7 @@ import GoogleMapsIconLink from "../GogleMapsIconLink/GoogleMapsIconLink";
 
 
 
-const Footer = () => {
+const Footer = ({phoneNumber}) => {
   return (
     <footer>
       <div className={css.footer}>
@@ -23,7 +23,7 @@ const Footer = () => {
           <p className={css.footerLogo}>Tapicer Jędrzejów</p>
           <p>ul. Strażacka 39</p>
           <p>28-300 Jędrzejów</p>
-          <p>tel. 504311731</p>
+          <p>tel. { phoneNumber}</p>
           <p>www.tapicerjedrzejow.pl</p>
         </div>
         <div className="css.socialLinks__wrapper">

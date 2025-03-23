@@ -1,20 +1,23 @@
+import "./App.css";
 import { useEffect, useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import CookiesModal from "./Components/modal/CookiesModal";
-
-import "./App.css";
 import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
 import Offer from "./Components/Offer/Offer";
-import Gallery from "./Components/Gallery/Gallery";
-// import UnderConstruction from "./Components/underConstruction/UnderConstruction";
 import Address from "./Components/SectionAddress/SectionAddress";
 import SewingMachineImage from "./Components/BackgroundSection/BackgroundSection";
 import GoogleMapsLink from "./Components/GoogleMapsLink/GoogleMapsLink";
-// import GoogleMapEmbed from "./Components/GoogleMap/GoogleMapEmbed";
+import HomePageGallery from "./Components/HomePageGallery/HomePageGallery";
+import Gallery from "./Components/Gallery/Gallery"; // Import nowego komponentu Gallery
+import Contact from "./Components/Contact/Contact"; // Import nowego komponentu Contact
+import Navigation from "./Components/Navigation/Navigation";
+
+
 
 function App() {
-  const phoneNumber = "504311731";
+  const phoneNumber = "+48 504 311 731";
   const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
@@ -33,28 +36,35 @@ function App() {
     localStorage.setItem("cookiesAccepted", "false");
     setShowModal(false);
   };
-//link do mapy
-  // const shareLink = "https://maps.app.goo.gl/REBzfDBxMUDxTSZGA";
-
-
 
   return (
-    <>
+    <Router>
       {showModal && (
         <CookiesModal onAccept={handleAccept} onReject={handleReject} />
       )}
       <Header phoneNumber={phoneNumber} />
-      <SewingMachineImage />
-      <Address />
-      <GoogleMapsLink
-        address="ul. Strażacka 39, Jędrzejów"
-        label="Otwórz w Mapach Google"
-      />
-      <Gallery />
-      <Offer />
-      {/* <GoogleMapEmbed shareLink={shareLink} /> */}
-      <Footer />
-    </>
+      <Navigation /> {/* Przenieś Navigation tutaj */}
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <SewingMachineImage />
+              <Address />
+              <GoogleMapsLink
+                address="ul. Strażacka 39, Jędrzejów"
+                label="Otwórz w Mapach Google"
+              />
+              <HomePageGallery />
+              <Offer />
+            </>
+          }
+        />
+        <Route path="/galeria" element={<Gallery />} />
+        <Route path="/kontakt" element={<Contact />} />
+      </Routes>
+      <Footer phoneNumber={phoneNumber} />
+    </Router>
   );
 }
 

@@ -1,0 +1,49 @@
+.nav {
+  display: none;
+  flex-basis: 100%;
+  margin-top: 10px;
+}
+
+.navOpen {
+  display: block;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.navItem {
+  margin-bottom: 10px;
+}
+
+.navLink {
+  text-decoration: none;
+  color: rgb(255, 115, 0);
+  font-weight: bold;
+}
+
+.navLink:hover {
+  color: rgb(255, 81, 0);
+}
+
+@media (min-width: 768px) {
+  .nav {
+    display: flex;
+    flex-direction: row;
+    flex-basis: auto;
+    margin-top: 20px;
+  }
+
+  .navList {
+    flex-direction: row;
+  }
+
+  .navItem {
+    margin-left: 20px;
+    margin-bottom: 0;
+  }
+}
