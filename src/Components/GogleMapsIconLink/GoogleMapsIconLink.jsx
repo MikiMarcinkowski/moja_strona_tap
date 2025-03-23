@@ -5,7 +5,7 @@ import css from "./GoogleMapsIconLink.module.css";
 
 const GoogleMapsIconLink = () => {
   const address = "Strażacka 39, 28-300 Jędrzejów";
-  const encodedAddress = address.replace(/ /g, "+"); // Proste zastąpienie spacji
+  const encodedAddress = address.replace(/ /g, "+"); 
   const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodedAddress}`;
 
   const handleClick = () => {

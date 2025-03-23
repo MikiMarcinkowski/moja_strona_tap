@@ -5,16 +5,11 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import CookiesModal from "./Components/modal/CookiesModal";
 import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
-import Offer from "./Components/Offer/Offer";
-import Address from "./Components/SectionAddress/SectionAddress";
-import SewingMachineImage from "./Components/BackgroundSection/BackgroundSection";
-import GoogleMapsLink from "./Components/GoogleMapsLink/GoogleMapsLink";
-import HomePageGallery from "./Components/HomePageGallery/HomePageGallery";
-import Gallery from "./Components/Gallery/Gallery"; // Import nowego komponentu Gallery
-import Contact from "./Components/Contact/Contact"; // Import nowego komponentu Contact
+
+import Gallery from "./pages/Gallery/Gallery"; // Import nowego komponentu Gallery
+import Contact from "./pages/Contact/Contact"; // Import nowego komponentu Contact
 import Navigation from "./Components/Navigation/Navigation";
-
-
+import Home from "./pages/Home/Home";
 
 function App() {
   const phoneNumber = "+48 504 311 731";
@@ -45,21 +40,7 @@ function App() {
       <Header phoneNumber={phoneNumber} />
       <Navigation /> {/* Przenieś Navigation tutaj */}
       <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <SewingMachineImage />
-              <Address />
-              <GoogleMapsLink
-                address="ul. Strażacka 39, Jędrzejów"
-                label="Otwórz w Mapach Google"
-              />
-              <HomePageGallery />
-              <Offer />
-            </>
-          }
-        />
+        <Route path="/" element={<Home />} />
         <Route path="/galeria" element={<Gallery />} />
         <Route path="/kontakt" element={<Contact />} />
       </Routes>

@@ -1,0 +1,33 @@
+.gallerySection {
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+    max-width: 1280px;
+}
+
+.gallerySection h2 {
+    color: rgb(255, 115, 0);
+    margin-bottom: 20px;
+}
+
+.gallerySection p {
+    margin-bottom: 50px;
+    font-size: 25px;
+    width: 100%;
+}
+
+.socialLinks {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+   
+}
+
+.socialLinks a {
+    color: rgb(255, 115, 0); 
+    font-size: 50px;
+}
+
+.socialLinks a:hover {
+    fill: rgb(255, 81, 0);
+    color: rgb(255, 81, 0);}
