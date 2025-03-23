@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import css from "./Contact.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -6,7 +6,7 @@ import {
   faInstagram,
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
-import GoogleMapsIconLink from "../../Components/GogleMapsIconLink/GoogleMapsIconLink";
+// import GoogleMapsIconLink from "../../Components/GogleMapsIconLink/GoogleMapsIconLink";
 
 import GoogleMapImg from "../../assets/photo/mapka_google.webp";
 
