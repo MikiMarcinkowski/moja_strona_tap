@@ -38,7 +38,7 @@ function App() {
         <CookiesModal onAccept={handleAccept} onReject={handleReject} />
       )}
       <Header phoneNumber={phoneNumber} />
-      <Navigation /> {/* Przenieś Navigation tutaj */}
+      <Navigation /> 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/galeria" element={<Gallery />} />

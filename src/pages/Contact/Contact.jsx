@@ -28,7 +28,7 @@ const Contact = () => {
           <a href={`tel:${phoneNumber}`}>
             {phoneNumber.replace(/(\d{3})(\d{3})(\d{3})/, "$1-$2-$3")}
           </a>
-          <h2>WhatsUp</h2>
+          <h2 className="{css.contact__WhatsUp}">WhatsUp</h2>
           <a
             href="https://wa.me/504311731"
             target="_blank"
